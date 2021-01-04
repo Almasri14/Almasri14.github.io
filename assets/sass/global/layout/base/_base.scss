@@ -29,7 +29,8 @@ body {
 
 		// Fixed Content Head
 		.kt-header--fixed.kt-subheader--fixed.kt-subheader--enabled & {
-			padding-top: kt-get($kt-header-config, base, desktop, default, height) + kt-get($kt-subheader-config, fixed, height);
+			padding-top: kt-get($kt-header-config, base, desktop, default, height);
+			// + kt-get($kt-subheader-config, fixed, height)
 		}
 
 		// Fixed Aside
@@ -45,10 +46,10 @@ body {
 	}
 
 	// Subheader
-	.kt-subheader {		
+	.kt-subheader {
 		// Fixed subheader mode
 		.kt-header--fixed.kt-subheader--fixed & {
-			position: fixed;			
+			position: fixed;
 			height: kt-get($kt-subheader-config, fixed, height);
 			top: kt-get($kt-header-config, base, desktop, default, height);
 			left: 0;
@@ -69,7 +70,7 @@ body {
 		.kt-aside--enabled.kt-subheader--fixed & {
 			left: kt-get($kt-aside-config, base, default, width);
 		}
-		
+
 		.kt-subheader--fixed.kt-aside--minimize-hover &,
 		.kt-subheader--fixed.kt-aside--minimize & {
 			left: kt-get($kt-aside-config, base, minimize, width);
@@ -77,7 +78,7 @@ body {
 		}
 	}
 
-	// Container 
+	// Container
 	.kt-container {
 		padding: 0 kt-get($kt-page-padding, desktop);
 	}
@@ -129,7 +130,7 @@ body:not(.kt-aside--enabled) {
 		}
 	}
 
-	// Container 
+	// Container
 	.kt-container {
 		padding: 0 kt-get($kt-page-padding, mobile);
 	}
@@ -142,7 +143,7 @@ body:not(.kt-aside--enabled) {
 	}
 
 	.kt-subheader--enabled.kt-subheader--solid {
-		.kt-subheader {		
+		.kt-subheader {
 			margin-bottom: kt-get($kt-page-padding, mobile);
 		}
 	}
