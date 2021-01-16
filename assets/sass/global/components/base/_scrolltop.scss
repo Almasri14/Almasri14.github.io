@@ -12,9 +12,9 @@
     width: 40px;
     height: 40px;
     position: fixed;
-    bottom: 40px;  
-    right: 20px;
-    cursor: pointer;     
+    bottom: 40px;
+    left: 20px;
+    cursor: pointer;
     z-index: 100;
     background: kt-brand-color();
     box-shadow: 0 0 15px 1px rgba(69,65,78, 0.2);
@@ -33,7 +33,7 @@
     > i {
         font-size: 1.3rem;
         color: kt-brand-color(inverse);
-    }          
+    }
 
     @include kt-svg-icon-color(kt-brand-color(inverse));
 
@@ -44,9 +44,9 @@
     }
 
     .kt-scrolltop--on & {
-        opacity: 0.3;     
+        opacity: 0.3;
         animation: kt-scrolltop-show-animation .4s ease-out 1;
-        display: flex; 
+        display: flex;
 
         &:hover {
             @include kt-transition();
@@ -55,7 +55,7 @@
     }
 
     @include kt-tablet-and-mobile {
-        bottom: 30px;  
+        bottom: 30px;
         right: 15px;
     }
 }

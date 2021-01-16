@@ -122,17 +122,17 @@
 
 		.kt-header {
 			transition: kt-get($kt-aside-config, base, minimize, transition);
-			left: kt-get($kt-aside-config, base, minimize, width);
+			right: kt-get($kt-aside-config, base, minimize, width);
 		}
 
 		.kt-wrapper {
 			transition: kt-get($kt-aside-config, base, minimize, transition);
-			padding-left: kt-get($kt-aside-config, base, minimize, width);
+			padding-right: kt-get($kt-aside-config, base, minimize, width);
 		}
 	}
 }
 
-/* Push mobile aside down the mobile header when it's toggled
+/* Push mobile aside down the mobile header when it's toggled */
 @include kt-tablet-and-mobile {
 	.kt-aside {
 		.kt-aside--fixed & {
@@ -140,7 +140,7 @@
 		}
 	}
 }
-*/
+/* */
 
 // Build aside menu
 @include kt-menu-ver-build-layout(kt-get($kt-aside-config, menu));

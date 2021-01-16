@@ -26,7 +26,7 @@
 		// Aside enabled
 		.kt-aside--enabled & {
 			&.kt-header--fixed {
-				left: kt-get($kt-aside-config, base, default, width);
+				right: kt-get($kt-aside-config, base, default, width);
 			}
 		}
 
@@ -38,7 +38,7 @@
 
 		// Minimize Aside
 		.kt-header--fixed.kt-aside--minimize & {
-			left: kt-get($kt-aside-config, base, minimize, width);
+			right: kt-get($kt-aside-config, base, minimize, width);
 			transition: kt-get($kt-aside-config, base, minimize, transition);
 		}
 	}

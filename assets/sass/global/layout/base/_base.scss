@@ -35,12 +35,12 @@ body {
 
 		// Fixed Aside
 		.kt-aside--fixed & {
-			padding-left: kt-get($kt-aside-config, base, default, width);
+			padding-right: kt-get($kt-aside-config, base, default, width);
 		}
 
 		// Minimize Aside
 		.kt-aside--fixed.kt-aside--minimize & {
-			padding-left: kt-get($kt-aside-config, base, minimize, width);
+			padding-right: kt-get($kt-aside-config, base, minimize, width);
 			transition: kt-get($kt-aside-config, base, minimize, transition);
 		}
 	}
@@ -68,12 +68,12 @@ body {
 		}
 
 		.kt-aside--enabled.kt-subheader--fixed & {
-			left: kt-get($kt-aside-config, base, default, width);
+			right: kt-get($kt-aside-config, base, default, width);
 		}
 
 		.kt-subheader--fixed.kt-aside--minimize-hover &,
 		.kt-subheader--fixed.kt-aside--minimize & {
-			left: kt-get($kt-aside-config, base, minimize, width);
+			right: kt-get($kt-aside-config, base, minimize, width);
 			transition: kt-get($kt-aside-config, base, minimize, transition);
 		}
 	}
